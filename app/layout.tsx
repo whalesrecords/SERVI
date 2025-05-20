@@ -1,11 +1,17 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#2563eb',
+}
 
 export const metadata: Metadata = {
-  title: 'SERVI Car - Plateforme de lavage auto',
-  description: 'Réservez votre lavage auto en quelques clics',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
-  themeColor: '#2563eb',
+  title: 'SERVI - Plateforme de Services à la Personne',
+  description: 'Trouvez et réservez des services à la personne en quelques clics : ménage, jardinage, bricolage, garde d\'enfants, et plus encore.',
 }
 
 export default function RootLayout({
